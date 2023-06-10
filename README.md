@@ -50,15 +50,15 @@
         return dp[m][n]
 
    # 데이터 파일의 경로를 지정합니다.
-filepath = 'ChatbotData.csv'
+    filepath = 'ChatbotData.csv'
 
    # 챗봇 객체를 생성합니다.
-chatbot = SimpleChatBot(filepath)
+    chatbot = SimpleChatBot(filepath)
 
    # '종료'라는 입력이 나올 때까지 사용자의 입력에 따라 챗봇의 응답을 출력하는 무한 루프를 실행합니다.
-while True:
-    input_sentence = input('You: ')
-    if input_sentence.lower() == '종료':
-        break
-    response = chatbot.find_best_answer(input_sentence)
-    print('Chatbot:', response)
+    while True:
+        input_sentence = input('You: ')
+       if input_sentence.lower() == '종료':
+          break
+      response = chatbot.find_best_answer(input_sentence)
+      print('Chatbot:', response)
